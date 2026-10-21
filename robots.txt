@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clawnick1295.github.io/stus-7-wonders/sitemap.xml
