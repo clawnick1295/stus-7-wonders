@@ -7,4 +7,16 @@
     <priority>1.0</priority>
     <image:image><image:loc>https://clawnick1295.github.io/stus-7-wonders/assets/og-image.jpg</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://clawnick1295.github.io/stus-7-wonders/worksheets/rio/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clawnick1295.github.io/stus-7-wonders/worksheets/rome/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

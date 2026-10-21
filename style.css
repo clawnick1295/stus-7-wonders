@@ -202,3 +202,5 @@ h2{font-size:clamp(2rem,8vw,3rem);text-align:center;margin-bottom:clamp(28px,5vw
 .foot-nav a:focus-visible,.foot-mark:focus-visible{outline:3px dashed #f6b84b;outline-offset:2px}
 .foot-credit{font-size:.82rem;font-weight:600;line-height:1.6;color:#e4ecd6;max-width:46ch;border-top:1px solid #ffffff2e;padding-top:16px;margin-top:4px}
 .foot-credit cite{font-style:normal}
+
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
