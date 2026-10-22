@@ -179,4 +179,6 @@ main{max-width:1100px;margin:0 auto;padding:0 clamp(14px,4vw,32px) 80px}
 .mcard.up img{opacity:1}.mcard.up .mback{display:none}.mcard.ok{border-color:#2f9e57;box-shadow:0 4px 0 #2f9e57}
 footer.ws-foot{text-align:center;font-size:.85rem;font-weight:700;padding:30px 16px 40px;color:#5e4a5c}
 footer.ws-foot a{color:inherit}
+.ws-follow{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2px 12px;margin:0 auto 10px}
+.ws-follow a{text-decoration:underline;text-underline-offset:3px}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
