@@ -801,7 +801,8 @@ function matchAct(a) {
   const chips = el('div', { class: 'chips' }, order.map(i => {
     const [w, sound] = a.pairs[i];
     const label = sound ? `${w}. ${sound}` : w;
-    return el('button', { class: 'chip', type: 'button', 'data-i': i, 'aria-label': label }, el('b', {}, w), sound ? el('small', {}, sound) : null);
+    const zh = /[\u3400-\u9fff]/.test(w + (sound || ''));
+    return el('button', { class: 'chip' + (zh ? ' zh' : ''), type: 'button', 'data-i': i, 'aria-label': label }, el('b', { class: zh ? 'zh' : '' }, w), sound ? el('small', { class: zh ? 'zh' : '' }, sound) : null);
   }));
   const targets = el('div', { class: 'targets' }, a.pairs.map(([, , em, mean], i) => el('div', {
     class: 'tgt', 'data-i': i, role: 'button', tabindex: 0, 'aria-label': 'Match to ' + mean

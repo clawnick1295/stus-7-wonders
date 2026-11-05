@@ -226,7 +226,7 @@ def draw_line_page(w, h, stu, clouds=False):
     for i in range(1, n):
         theta = -np.pi / 2 + np.pi * i / n
         gore = []
-        for y in np.linspace(top + 16, throat_y - 2, 30):
+        for y in np.linspace(top + 16, throat_y - 18, 30):
             gore.append((X(theta, y), y))
         d.line(gore, fill=0, width=max(5, stroke - 2), joint="curve")
 
@@ -261,13 +261,15 @@ def draw_line_page(w, h, stu, clouds=False):
 
     # The original activity drawing of Stu (cap, wave, binoculars), placed in the new basket.
     stu_src = Image.open(os.path.join(os.path.dirname(__file__), "stu-basket-line.png")).convert("L")
-    stu_w = int(rim_w * 0.92)
-    stu_h = int(stu_w * stu_src.size[1] / stu_src.size[0])
-    stu_r = stu_src.resize((stu_w, stu_h), Image.Resampling.NEAREST)
+    stu_w = int(rim_w * 0.86)
+    gap = max(40, rim_top - (throat_y + 12))
+    stu_h = int(min(stu_w * stu_src.size[1] / stu_src.size[0], gap + 6))
+    stu_w = int(stu_h * stu_src.size[0] / stu_src.size[1])
+    stu_r = stu_src.resize((max(1, stu_w), max(1, stu_h)), Image.Resampling.NEAREST)
     ink = np.array(stu_r) < 128
     page = np.array(im)
     x0 = int(cx - stu_w / 2)
-    y0 = int(rim_top - stu_h * 0.78)
+    y0 = int(throat_y + 12)
     y1, x1 = min(h, y0 + stu_h), min(w, x0 + stu_w)
     sy = 0 if y0 >= 0 else -y0
     y0 = max(0, y0)
