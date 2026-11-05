@@ -53,10 +53,11 @@ main{max-width:1100px;margin:0 auto;padding:0 clamp(14px,4vw,32px) 80px}
 
 /* activity */
 .act-head{display:flex;align-items:center;gap:14px;margin:4px 0 12px}
-.act-head h1{font-size:clamp(1.5rem,6vw,2.3rem)}
+.act-head h1{font-size:clamp(1.5rem,6vw,2.3rem);overflow-wrap:anywhere}
+.act-head h1:focus{outline:none}
 .act-n{font-weight:800;font-size:.85rem;color:var(--teal)}
 .back{flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#fff;border:2.5px solid var(--ink);text-decoration:none;color:var(--ink);font-size:1.4rem;font-weight:800;box-shadow:0 4px 0 var(--ink)}
-.act-head>div{flex:1}
+.act-head>div{flex:1;min-width:0}
 .prompt{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:1.05rem;line-height:1.45;background:#fff;border:2px solid #e8dcc0;border-radius:18px;padding:12px 14px;margin-bottom:16px}
 .say{flex:none;width:40px;height:40px;border-radius:50%;border:2px solid var(--ink);background:var(--gold)}
 .stage{position:relative;background:#fff;border:3px solid var(--ink);border-radius:22px;overflow:hidden;max-width:760px;margin:0 auto;box-shadow:0 6px 0 #d9c49a}
