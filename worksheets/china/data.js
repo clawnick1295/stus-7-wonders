@@ -1,0 +1,78 @@
+/* China worksheet data. Art in art/ can be replaced with final print paintings. One panda only. */
+window.WS_BOOK = {
+  id: 'china',
+  title: 'Discovering China',
+  place: 'China',
+  stamp: 'art/icon-wall.webp',
+  theme: { '--coral': '#d64545', '--mint': '#2f9e57' },
+  activities: [
+    { id:'lantern-balloon', type:'color', title:'Colour Stu’s lantern balloon', age:'All ages', img:'art/lantern-balloon.webp', prompt:'Pick a colour, then tap a space to fill it. The balloon is dressed in lantern colours for China!', goal:8 },
+    { id:'explorer-id', type:'idcard', title:'My Explorer ID card', age:'All ages', img:'../../assets/stu.webp', prompt:'Type your name, pick your favourite thing about this adventure, and draw your face!',
+      favs:['🐼 My panda friend','🧱 The Great Wall','🏮 Lanterns','🎋 Bamboo'] },
+    { id:'fly-to-china', type:'trace', title:'Fly Stu to China!', age:'Ages 4–5', img:'art/map.webp', win:'Stu made it to the Great Wall!', traceLabel:'Story map. Follow the path from Home to the Great Wall.', prompt:'Put your finger on the balloon at Home and follow the line to the Great Wall.',
+      path: [[120, 160], [250, 200], [380, 250], [520, 280], [660, 260], [800, 220]] },
+    { id:'mountains', type:'color', title:'Up over the mountains!', age:'Ages 4–5', img:'art/mountains.webp', prompt:'Colour Stu’s balloon as it sails over the mountains toward China.', goal:6 },
+    { id:'find-lanterns', type:'find', title:'Lantern look and find', age:'Ages 4–5', img:'art/find-lanterns.webp', scale:800, prompt:'Find Stu, his one panda friend, the lanterns, the bamboo, the moon and the stars. Tap each one!',
+      items: {"Stu": [[430, 690]], "Panda": [[250, 640]], "Lantern": [[140, 180], [300, 150], [560, 170], [700, 220]], "Bamboo": [[80, 620], [740, 600]], "Moon": [[680, 80]], "Star": [[80, 70], [200, 120], [500, 60]]} },
+    { id:'diff-landing', type:'diff', title:'Spot 5 differences', age:'Ages 4–5', a:'art/diff1-a.webp', b:'art/diff1-b.webp', img:'art/diff1-a.webp', scale:800, prompt:'Look at both pictures. Tap each spot that has changed!',
+      diffs:[[100,70],[620,310],[360,540],[145,330],[730,100]], desc:['An extra cloud','The lantern tassel is gone','The bamboo is gone','The watchtower window is gone','A bird is flying'] },
+    { id:'panda', type:'color', title:'Colour the friendly panda', age:'Ages 4–5', img:'art/panda.webp', prompt:'Stu has one panda friend. Colour the panda, black and white, and the bamboo green.', goal:6,
+      palette:['#2a2433','#ffffff','#3d9a5b','#7ec86a','#e9785a','#f6b84b','#f3c89b','#5bc0be'] },
+    { id:'words-easy', type:'wordsearch', title:'China word search', age:'Ages 4–5', img:'art/icon-panda.webp', size:10, dirs:['across','down'], seed:11,
+      words:['CHINA','STU','PANDA','WALL','LANTERN','BAMBOO','MOON','DRAGON'], prompt:'Find the words! Slide your finger across the letters, or tap the first and last letter.' },
+    { id:'mandarin', type:'match', title:'Learn Mandarin words', age:'Ages 4–8', img:'art/icon-lantern.webp', lang:'zh-CN', win:'很好! (Very good!)', prompt:'Each card shows Chinese characters and pinyin. Tap a word to hear it, then match it to the English meaning.',
+      pairs:[
+        ['你好','Nǐ hǎo','👋','hello','你好'],
+        ['谢谢','Xièxie','🙏','thank you','谢谢'],
+        ['再见','Zàijiàn','✋','goodbye','再见'],
+        ['是','Shì','👍','yes','是'],
+        ['不是','Bú shì','👎','no','不是'],
+        ['朋友','Péngyou','🤝','friend','朋友'],
+        ['熊猫','Xióngmāo','🐼','panda','熊猫'],
+        ['竹子','Zhúzi','🎋','bamboo','竹子']
+      ] },
+    { id:'maze-wall', type:'maze', title:'Walk the Great Wall', age:'Ages 4–5', img:'art/icon-wall.webp', rows:6, cols:6, seed:11, start:'../../assets/balloon.webp', end:'art/icon-wall.webp', prompt:'Slide Stu’s balloon along the wall to the watchtower. You can also use the arrow buttons.' },
+    { id:'lanterns', type:'color', title:'Light the lanterns', age:'Ages 4–8', img:'art/lanterns.webp', prompt:'Colour the lanterns red and gold.', goal:8, palette:['#d64545','#f0b429','#fff4c2','#2a2433','#3d9a5b','#ffffff'] },
+    { id:'find-wall', type:'find', title:'Hidden along the Wall', age:'Ages 6–8', img:'art/find-wall.webp', scale:800, prompt:'Find Stu, his one panda friend, the lanterns, the birds, the kite and the map.',
+      items: {"Stu": [[180, 560]], "Panda": [[420, 520]], "Lantern": [[300, 200], [640, 180], [720, 300]], "Bird": [[80, 120], [500, 90], [200, 80]], "Kite": [[600, 80]], "Map": [[700, 560]]} },
+    { id:'dots-tower', type:'dots', title:'Dot-to-dot: the watchtower', age:'Ages 4–8', img:'art/icon-wall.webp', win:'You drew a Great Wall watchtower!', prompt:'Tap the dots in order, 1, 2, 3… and watch the tower appear!',
+      dots:[[120,520],[120,360],[80,360],[80,300],[160,220],[220,140],[300,80],[380,140],[460,220],[540,300],[540,360],[500,360],[500,520],[360,520],[240,520]] },
+    { id:'diff-path', type:'diff', title:'Spot 7 differences', age:'Ages 6–8', a:'art/diff2-a.webp', b:'art/diff2-b.webp', img:'art/diff2-a.webp', scale:800, prompt:'Seven things changed beside the watchtower. Tap each change.',
+      diffs:[[100,70],[620,250],[730,100],[360,540],[145,330],[620,310],[500,145]], desc:['An extra cloud','The lantern changed colour','A bird appears','The bamboo is gone','The window is gone','The tassel is gone','A kite appears'] },
+    { id:'wall-enormous', type:'color', title:'The Great Wall is ENORMOUS!', age:'Ages 4–8', img:'art/wall.webp', prompt:'Colour the long wall and the little watchtower. Stu and his panda friend are tiny beside it.', goal:6 },
+    { id:'fun-facts', type:'quiz', title:'China fun facts quiz', age:'Ages 6–8', img:'art/icon-wall.webp', prompt:'Read or listen, then tap the answer.',
+      qs:[
+        ['The stone Great Wall many people walk on was built mostly during which time?',['The Ming dynasty, hundreds of years ago','Last summer','Ten years ago'],0,'Many rulers added to the wall. The famous stone parts are mostly from the Ming dynasty.'],
+        ['About how long is that Ming wall?',['About 5,500 miles (8,850 km)','About 5 miles','Shorter than a school bus'],0,'It is long enough to cross mountains and deserts.'],
+        ['Can you see the Great Wall from the Moon with just your eyes?',['No','Yes','Only on Tuesdays'],0,'That is a myth. The wall is long, but far too thin to see from the Moon.'],
+        ['What does the giant panda eat most of the time?',['Bamboo','Pizza','Fish'],0,'A panda spends much of the day eating bamboo.'],
+        ['Red lanterns are often lit for which celebration?',['Chinese New Year','Halloween','A school fire drill'],0,'Red lanterns shine at Chinese New Year and the Lantern Festival.'],
+        ['What were the watchtowers on the wall used for?',['To watch the land and send signals','To sell ice cream','To park balloons'],0,'Guards could see a long way and signal from tower to tower.']
+      ] },
+    { id:'words-hard', type:'wordsearch', title:'Word search: explorer level', age:'Ages 6–8', img:'art/icon-lantern.webp', size:12, dirs:['across','down','diagonal'], seed:8,
+      words:['GREATWALL','WATCHTOWER','LANTERN','BAMBOO','PANDA','CHINA','FESTIVAL','MOUNTAIN','EXPLORER','BALLOON','FRIEND','WONDER'], prompt:'Twelve words hide across, down and diagonally!' },
+    { id:'friends', type:'color', title:'Stu and his panda friend', age:'Ages 4–8', img:'art/friends.webp', prompt:'Colour Stu and his one panda friend sharing bamboo.', goal:6 },
+    { id:'find-bamboo', type:'find', title:'In the bamboo grove', age:'Ages 6–8', img:'art/find-bamboo.webp', scale:800, prompt:'Find the one panda, Stu, the bamboo, the butterflies, the lantern and the birds.',
+      items: {"Panda": [[360, 560]], "Stu": [[520, 640]], "Bamboo": [[80, 760], [180, 780], [560, 770], [680, 750], [760, 790]], "Butterfly": [[140, 200], [400, 160], [640, 220]], "Lantern": [[300, 120]], "Bird": [[80, 80], [700, 70]]} },
+    { id:'maze-path', type:'maze', title:'Follow the wall', age:'Ages 6–8', img:'art/icon-panda.webp', rows:10, cols:9, seed:23, start:'art/icon-panda.webp', end:'art/icon-wall.webp', prompt:'Help the panda lead Stu along the twisty wall. Use a swipe or the arrow buttons.' },
+    { id:'diff-festival', type:'diff', title:'Spot 8 differences', age:'Ages 6–8', a:'art/diff3-a.webp', b:'art/diff3-b.webp', img:'art/diff3-a.webp', scale:800, prompt:'The festival picture has 8 changes. Find them all!',
+      diffs:[[75,65],[700,80],[625,420],[760,300],[170,95],[420,520],[540,480],[220,215]], desc:['An extra cloud','A star appears','A butterfly appears','An extra lantern','A bird appears','A little map appears','A new rope','Another cloud'] },
+    { id:'my-lantern', type:'draw', title:'Design your own lantern', age:'Ages 4–8', img:'art/lantern-outline.webp', win:'What a bright lantern!', prompt:'Draw patterns on your lantern, then tap Fill to pour in colour.' },
+    { id:'next-wonder', type:'color', title:'Which Wonder next?', age:'Ages 4–8', img:'art/signpost.webp', prompt:'Colour the signpost. Stu has been to Rio, Rome and China. Where should the balloon fly next?', goal:6 },
+    { id:'rhyme', type:'quiz', title:'Finish the rhyme', age:'Ages 6–8', img:'art/icon-lantern.webp', win:'Rhyme time champion!', prompt:'Tap the word that finishes the rhyme about Stu’s China trip.',
+      qs:[
+        ['Stu floated on and saw a sight, a wall of stone so long and ____.',['wide','cat'],0],
+        ['One friendly panda chewed a shoot. Bamboo for lunch is quite a ____.',['treat','shoe'],0],
+        ['Red lanterns glowed against the night and filled the street with gentle ____.',['light','snow'],0],
+        ['The path was steep along the ridge. Stu held the basket on the ____.',['bridge','horse'],0],
+        ['The moon was round and very bright. Stu whispered, “Xièxie, friend. Good ____.”',['night','day'],0]
+      ] },
+    { id:'count-lanterns', type:'quiz', title:'Count the lanterns', age:'Ages 4–5', img:'art/count.webp', scene:'art/count.webp', sceneAlt:'Lanterns, one panda, Stu, birds and bamboo', prompt:'Look closely at the picture and count. There is only one panda.',
+      qs:[
+        ['How many lanterns can you see?',['4','6','8'], 1],
+        ['How many birds are flying?',['2','4','7'], 1],
+        ['How many bamboo stalks?',['1','3','5'], 1],
+        ['How many panda friends can you see?',['1','3','5'],0]
+      ] }
+  ]
+};

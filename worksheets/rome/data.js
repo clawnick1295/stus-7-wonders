@@ -46,7 +46,7 @@ window.WS_BOOK = {
     { id:'puzzle', type:'puzzle', title:'Colosseum picture puzzle', age:'Ages 4–8', img:'art/puzzle.webp', n:3, win:'Puzzle solved! Bravo!', prompt:'The picture is all mixed up! Tap two tiles to swap them until the picture is whole.' },
     { id:'memory', type:'memory', title:'Rome memory match', age:'Ages 4–8', img:'art/m-lion.webp', prompt:'Flip two cards at a time. Can you find all the matching pairs?',
       cards:[ ['art/m-stu.webp','Stu'], ['art/m-gladiator.webp','Gladiator'], ['art/m-balloon.webp','Balloon'], ['art/m-lion.webp','Lion'], ['art/m-chariot.webp','Chariot'], ['art/m-colosseum.webp','Colosseum'], ['art/m-pizzeria.webp','Pizzeria'], ['art/m-flag.webp','Italian flag'] ] },
-    { id:'my-shield', type:'draw', title:'Design your gladiator shield', age:'Ages 4–8', img:'art/shield.webp', prompt:'Draw a brave pattern on your shield, then tap Fill to pour in colour.' },
+    { id:'my-shield', type:'draw', title:'Design your gladiator shield', age:'Ages 4–8', img:'art/shield.webp', win:'What a brave shield!', prompt:'Draw a brave pattern on your shield, then tap Fill to pour in colour.' },
     { id:'count-lions', type:'quiz', title:'Count in the arena', age:'Ages 4–5', img:'art/lions.webp', scene:'art/lions.webp', prompt:'Look closely at the picture and count!',
       qs:[ ['How many lions can you see?',['1','2','3'],1], ['How many kids are waving in the crowd?',['3','5','8'],0], ['How many people sit in the emperor’s box?',['2','5','9'],1] ] },
     { id:'rhyme', type:'quiz', title:'Rhyme time', age:'Ages 6–8', img:'art/m-balloon.webp', prompt:'Tap the word that rhymes!',
