@@ -31,7 +31,7 @@ window.WS_BOOK = {
         ['熊猫','Xióngmāo','🐼','panda','熊猫'],
         ['竹子','Zhúzi','🎋','bamboo','竹子']
       ] },
-    { id:'maze-wall', type:'maze', title:'Walk the Great Wall', age:'Ages 4–5', img:'art/icon-wall.webp', rows:6, cols:6, seed:11, start:'../../assets/balloon.webp', end:'art/icon-wall.webp', prompt:'Slide Stu’s balloon along the wall to the watchtower. You can also use the arrow buttons.' },
+    { id:'maze-wall', type:'maze', title:'Walk the Great Wall', age:'Ages 4–5', img:'art/icon-wall.webp', rows:6, cols:6, seed:11, start:'../../assets/balloon.png', end:'art/icon-wall.webp', prompt:'Slide Stu’s balloon along the wall to the watchtower. You can also use the arrow buttons.' },
     { id:'lanterns', type:'color', title:'Light the lanterns', age:'Ages 4–8', img:'art/lanterns.webp', prompt:'Colour the lanterns red and gold.', goal:8, palette:['#d64545','#f0b429','#fff4c2','#2a2433','#3d9a5b','#ffffff'] },
     { id:'find-wall', type:'find', title:'Hidden along the Wall', age:'Ages 6–8', img:'art/find-wall.webp', scale:800, prompt:'Find Stu, his one panda friend, the lanterns, the birds, the kite and the map.',
       items: {"Stu": [[180, 560]], "Panda": [[420, 520]], "Lantern": [[300, 200], [640, 180], [720, 300]], "Bird": [[80, 120], [500, 90], [200, 80]], "Kite": [[600, 80]], "Map": [[700, 560]]} },

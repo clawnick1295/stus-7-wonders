@@ -73,11 +73,12 @@ h1 .w:nth-child(1){color:var(--gold)}h1 .w:nth-child(2){color:var(--coral);anima
 @keyframes hop{0%,80%,100%{transform:translateY(0) rotate(0)}86%{transform:translateY(-12px) rotate(-3deg)}92%{transform:translateY(2px) rotate(2deg)}}
 .sub{font-size:clamp(1rem,3.8vw,1.2rem);line-height:1.5;font-weight:600;max-width:30ch;margin:0 auto}
 
-.balloon-wrap{position:relative;z-index:4;width:min(76vw,50svh,420px);margin-top:clamp(6px,2vh,24px);will-change:transform}
-.balloon{position:relative;container-type:inline-size;transform-origin:50% 0;animation:bob 6s ease-in-out infinite,drift 17s ease-in-out infinite}
-.balloon img{filter:drop-shadow(0 18px 18px #2f5f7a33)}
-@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -18px}}
-@keyframes drift{0%,100%{rotate:-2.2deg;transform:translateX(-14px)}50%{rotate:2.2deg;transform:translateX(14px)}}
+.balloon-wrap{position:relative;z-index:4;width:min(76vw,50svh,420px);margin-top:clamp(6px,2vh,24px)}
+.balloon-drift{transform-origin:50% 0;animation:drift 17s ease-in-out infinite}
+.balloon{position:relative;transform-origin:50% 0;animation:bob 6s ease-in-out infinite}
+.balloon img{display:block;width:100%;height:auto}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}
+@keyframes drift{0%,100%{transform:translateX(-14px) rotate(-2.2deg)}50%{transform:translateX(14px) rotate(2.2deg)}}
 
 .clouds{position:absolute;inset:0;pointer-events:none;will-change:transform}
 .c{position:absolute;fill:#fff;filter:url(#paint)}
