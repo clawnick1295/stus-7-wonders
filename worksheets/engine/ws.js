@@ -1064,7 +1064,7 @@ function hub() {
     el('p', {}, `${n} of ${T} stickers collected`),
     el('div', { class: 'trail', role: 'progressbar', 'aria-valuemin': 0, 'aria-valuemax': T, 'aria-valuenow': n, 'aria-label': 'Stickers collected' },
       el('div', { class: 'trail-fill', style: `width:${n / T * 100}%` }),
-      el('img', { class: 'trail-balloon', src: '../../assets/balloon.webp', alt: '', style: `left:${Math.max(6, Math.min(94, n / T * 100))}%` }),
+      el('img', { class: 'trail-balloon', src: '../../assets/balloon.png', alt: '', style: `left:${Math.max(6, Math.min(94, n / T * 100))}%` }),
       el('img', { class: 'trail-end', src: B.stamp, alt: '' })),
     n === T ? el('p', { class: 'cert' }, `Certified ${B.place || ''} Explorer! You finished every activity.`) : null);
   const grid = el('ol', { class: 'cards' }, B.activities.map((a, i) => el('li', {}, el('a', {
