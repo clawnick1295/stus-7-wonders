@@ -2,7 +2,7 @@
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 document.documentElement.classList.add('js');
 // pop-in on scroll
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.18});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.01});
 document.querySelectorAll('.pop').forEach(el=>reduce?el.classList.add('in'):io.observe(el));
 if(reduce){placeMini(1);return}
 
